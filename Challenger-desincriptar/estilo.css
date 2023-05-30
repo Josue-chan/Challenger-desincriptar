@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: Helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    background-color: #F3F5FC;
+  }
+  .contenedor_1{
+    max-width: 1250px;
+    margin: auto;
+    /*border: 1px red solid;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .caja_encriptar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    /*border: 1px red solid;*/
+    max-width: 500px;
+    padding: 40px;
+
+  }
+
+  .caja_encriptar textarea{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 3px double black;
+    resize: none;
+    font-size: 25px;
+    color: #0A3871;
+  }
+  textarea::placeholder{
+    color: #0A3871;
+    
+  }
+  .terminos{
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .terminos{
+    color: brown;
+    font-size: 15px;
+  }
+  .contenedor_botones{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    /*border: 1px red solid;*/
+    width: 450px;
+  }
+  .contenedor_botones button{
+    width: 150px;
+    height: 60px;
+    
+    background-color: #0A3871;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+  .contenedor_botones button:hover{
+    background-color: #333;
+  }
+
+  .contenedor_botones input{
+    width: 150px;
+    height: 60px;
+    background-color: grey;
+    border-radius: 10px;
+    color: white;
+  }
+  .contenedor_botones input:hover{
+    background-color: #0A3871;
+  }
+.cajita_encriptado{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50px;
+    padding: 35px;
+    background-color: #FFFFFF;
+    max-width: 100%;
+    height: 600px;
+}
+  .cajita_encriptado figure{
+    
+    max-width: 500px;
+   /* border: 1px red solid;*/
+  }
+  .cajita_encriptado figure img{
+    width: 100%;
+    /*border: 1px red solid;*/
+  }
+  .cajita_de_mensaje_encriptado{
+    margin: 20px;
+  }
+  .cajita_de_mensaje_encriptado h2{
+    font-size: 30px;
+    color: brown;
+        /*border: 1px red solid;*/
+        margin: 10px;
+  }
+  .cajita_de_mensaje_encriptado p{
+    font-size: 20px;
+    color: brown;
+    margin: 10px;
+  }
+
+
+  @media screen and (max-width: 770px) {
+
+    .contenedor_1{
+
+      /*border: 1px red solid;*/
+      flex-direction:column-reverse;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .cajita_encriptado{
+      margin-top: 15px;
+  }
+
+  }
+
+  @media screen and (max-width: 568px) {
+    .caja_encriptar textarea{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      border: 3px double black;
+      resize: none;
+    }
+    .caja_encriptar{
+      max-width: 100%;
+
+  
+    }
+
+
+  }
